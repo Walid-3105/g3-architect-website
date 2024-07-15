@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Work Sans", sans-serif;
+}
+
+
+/* universal style */
+.display-flex{
+    display: flex;
+}
+
+.dark-1{
+    color: #131313;
+}
+
+.dark-2{
+    color: #424242;
+}
+
+.dark-3{
+    color: #727272;
+}
+
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 24px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.section-title{
+    font-size: 2.8rem;
+}
+
+/* universal style end here */
+
+/* header section */
+.header-bg{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.brand{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.navbar{
+    justify-content: space-between;
+}
+.nav-items{
+    list-style: none;
+    align-items: center;
+    font-size: 1rem;
+}
+.nav-item{
+    margin-right: 1.5rem;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+.navbar, .banner{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+/* banner */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-heading{
+    font-size: 4rem;
+    font-style: bold;
+}
+
+.banner-title{
+    font-size: 1rem;
+}
+
+.banner-image{
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+/* Teams section start here */
+main{
+    max-width: 1220px;
+     margin: 0 auto;
+}
+
+.teams{
+    margin-top: 85px;
+    align-items: center;
+}
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.our-feature{
+    margin-left: 130px;
+    max-width: 536px;
+    font-weight: 700;
+}
+
+
+.feature-description{
+    font-size: 1rem;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+#quick-list{
+    font-weight: 500;
+}
+#feature{
+    color: #FF900E;
+}
+/* Teams section end here */
+
+/* Some fact section start here */
+
+.facts-description{
+    width: 540px;
+    font-size: 1rem;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+ .fact-card{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+ .fact-number{
+    font-size: 2.8rem;
+    font-style: 600;
+    margin: 10px;
+ }
+
+ .fact-name{
+    font-size: 1.2rem;
+    font-style: 600;
+    margin: 10px;
+ }
+
+/* Some fact section ends here */
+/*  */
+.sponsors-title{
+    font-size: 2.8rem;
+    font-style: 700;
+}
+
+.sponsors-description{
+    font-size: 1rem;
+}
+
+.sponsors-info{
+    width: 540px;
+    margin: 0 auto;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sponsors-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsors-companies img{
+    filter: grayscale(100%);
+}
+
+/* small device */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-item, .teams{
+        flex-direction: column;
+        align-items: center;
+    }
+    .brand, .section-title, .facts-description{
+        text-align: center;
+    }
+    .image-container, 
+    .facts-container,
+    .sponsors-companies{
+        grid-template-columns: 1fr;
+    }
+
+    .facts-description,
+    .sponsors-info{
+        margin: 0 auto;
+        margin-bottom: 15px;
+        width: 350px;
+    }
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
+
+    }
+
+    .our-feature{
+        margin: 20px;
+    }
+    .sponsors-companies{
+        gap: 25px;
+        justify-items: center;
+
+    }
+}
+
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-feature{
+        margin: 50px auto;
+    } 
+
+    .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        
+    }
+    .sponsors-companies{
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+    .some-fact{
+        margin: 0 auto;
+        width: 540px;
+
+    }
+}
