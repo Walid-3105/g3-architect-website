@@ -88,6 +88,8 @@ body{
     margin-bottom: 45px;
 }
 
+
+
 /* Teams section start here */
 main{
     max-width: 1440px;
@@ -124,8 +126,10 @@ main{
 }
 /* Teams section end here */
 
-/* Some fact section start here */
 
+
+
+/* Some fact section start here */
 .facts-description{
     width: 540px;
     font-size: 1rem;
@@ -155,8 +159,10 @@ main{
     font-style: 600;
     margin: 10px;
  }
-
 /* Some fact section ends here */
+
+
+
 /* Our Sponsor section start here */
 .sponsors-title{
     font-size: 2.8rem;
@@ -245,6 +251,23 @@ main{
 
 /* Experience section ends here */
 
+/* Footer */
+.footer{
+    padding: 38px 200px;
+    margin-top: 130px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 144, 14, 0.1);;
+}
+
+
+
+
+
+
 /* small device */
 @media screen and (max-width: 576px) {
     .navbar, 
@@ -291,6 +314,10 @@ main{
         margin-top: 20px;
         margin-left: 20px;
     }
+
+    .footer{
+        padding: 20px;
+    }
 }
 
 /* medium device */
@@ -324,5 +351,7 @@ main{
         font-size: 1rem;
         font-weight: 400;
     }
-    
+    .footer{
+        padding: 20px 100px;
+    }
 }
