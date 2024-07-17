@@ -63,7 +63,7 @@ body{
 }
 
 .navbar, .banner{
-    max-width: 1220px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -90,8 +90,8 @@ body{
 
 /* Teams section start here */
 main{
-    max-width: 1220px;
-     margin: 0 auto;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .teams{
@@ -157,7 +157,7 @@ main{
  }
 
 /* Some fact section ends here */
-/*  */
+/* Our Sponsor section start here */
 .sponsors-title{
     font-size: 2.8rem;
     font-style: 700;
@@ -185,16 +185,81 @@ main{
 .sponsors-companies img{
     filter: grayscale(100%);
 }
+/* Our Sponsor section ends here */
+
+/* Experience section start here */
+.experience{
+    gap: 140px;
+    margin-top: 130px;
+    margin-bottom: 124px;
+
+}
+
+.experience-description{
+    font-size: 1rem;
+
+}
+#first-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    /* width: 580px; */
+    /* margin-top: 30px; */
+}
+
+.feature-card .experience-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* .section-title{
+    margin: 0;
+} */
+
+.feature-architect img{
+    width: 100%;
+ } 
+
+
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+/* Experience section ends here */
 
 /* small device */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-item, .teams{
+    .navbar, 
+    .nav-item, 
+    .teams,
+    .experience{
         flex-direction: column;
         align-items: center;
     }
+
+
     .brand, .section-title, .facts-description{
         text-align: center;
     }
+
     .image-container, 
     .facts-container,
     .sponsors-companies{
@@ -221,11 +286,17 @@ main{
         justify-items: center;
 
     }
+
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 /* medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
+    .teams,
+    .experience{
         flex-direction: column;
     }
     .our-feature{
@@ -246,4 +317,12 @@ main{
         width: 540px;
 
     }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 35px 32px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
 }
